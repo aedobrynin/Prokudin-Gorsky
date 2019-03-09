@@ -3,11 +3,11 @@
 
 The program makes colored photo from S.M. Prokudin-Gorsky's negatives. 
 
-![Algo result #1](https://bit.ly/2Ut5ynU)
+![Algo result #1](https://github.com/hashlib/Prokudin-Gorsky/blob/master/results_for_readme/2018678905.png)
 
-![Algo result #2](https://bit.ly/2EK83eI)
+![Algo result #2](https://github.com/hashlib/Prokudin-Gorsky/blob/master/results_for_readme/2018679120.png)
 
-![Algo result #3](https://bit.ly/2EW2co2)
+![Algo result #3](https://github.com/hashlib/Prokudin-Gorsky/blob/master/results_for_readme/2018679802.png)
 
 ## Preparing for work
 
