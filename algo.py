@@ -29,7 +29,7 @@ class ThreadWithReturnValue(threading.Thread):
 def get_the_best_shifts(channel_a, channel_b, row_shift_search_range,
                         col_shift_search_range):
     """The function brute forcing row and column shifts for channel_a and
-finding such a shift that gives the maximal correlation coefficient."""
+    finding such a shift that gives the maximal correlation coefficient."""
 
     min_row_shift, max_row_shift = row_shift_search_range
     min_col_shift, max_col_shift = col_shift_search_range
@@ -77,8 +77,8 @@ finding such a shift that gives the maximal correlation coefficient."""
 
 def pyramid_shifts_search(channel_a, channel_b):
     """Searching the best shift for channel_a to rich the maximal
-correlation coefficient with channel_b.
-The function uses image pyramid to solve the problem."""
+    correlation coefficient with channel_b.
+    The function uses image pyramid to solve the problem."""
 
     """Setting image pyramid's depth"""
     depth = 3
@@ -122,7 +122,7 @@ def main(path):
     channel_size = img_r // 3
 
     """Splitting image into 3 channels (Blue, Green, Red) and getting rid
-of borders."""
+    of borders."""
     b = img[channel_row_cut: channel_size - channel_row_cut,
             channel_col_cut: -channel_col_cut]
 
@@ -133,7 +133,7 @@ of borders."""
             channel_col_cut: -channel_col_cut]
 
     """Setting up two threads to calculate the best shifts using image
-pyramid"""
+    pyramid"""
     find_the_best_b_shifts_thread = ThreadWithReturnValue(
         target=pyramid_shifts_search, args=(b, g))
 
@@ -155,7 +155,6 @@ pyramid"""
 
     """Substraction in slices needs for cases
     when total_cut[0] or total_cut[1] == 0"""
-
     b = b[total_cut[0]: b.shape[0] - total_cut[0],
           total_cut[1]: b.shape[1] - total_cut[1]]
     g = g[total_cut[0]: g.shape[0] - total_cut[0],
