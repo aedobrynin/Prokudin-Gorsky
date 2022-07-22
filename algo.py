@@ -87,9 +87,9 @@ def pyramid_shifts_search(channel_a, channel_b):
 
     """Creating image pyramids"""
     channel_a_pyramid = tuple(skimage.transform.pyramid_gaussian(
-        channel_a, max_layer=depth, downscale=2, multichannel=False))
+        channel_a, max_layer=depth, downscale=2))
     channel_b_pyramid = tuple(skimage.transform.pyramid_gaussian(
-        channel_b, max_layer=depth, downscale=2, multichannel=False))
+        channel_b, max_layer=depth, downscale=2))
 
     row_shift_search_range = (-7, 7)
     col_shift_search_range = (-7, 7)
