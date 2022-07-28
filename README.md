@@ -1,7 +1,8 @@
-
 # Prokudin-Gorsky's photo processing
 
 The program makes colored photo from S.M. Prokudin-Gorsky's negatives. 
+
+## There is a [newer version](https://github.com/aedobrynin/gorsky) of this project written on Golang
 
 ![Algo result #1](https://github.com/hashlib/Prokudin-Gorsky/blob/master/results_for_readme/2018678905.png)
 
